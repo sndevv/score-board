@@ -1,6 +1,6 @@
 import QtQuick 2.0
 
-Rectangle
+XRect
 {
     id: control;
 
