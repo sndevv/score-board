@@ -114,6 +114,22 @@ Rectangle
                 {
                 }
             }
+        },
+        State
+        {
+            name: "GAME"
+            PropertyChanges
+            {
+                target: main_screen_loader;
+                source: "GameScreen.qml";
+            }
+
+            StateChangeScript
+            {
+                script:
+                {
+                }
+            }
         }
     ]
 
