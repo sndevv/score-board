@@ -1,5 +1,7 @@
 import QtQuick 2.0
 
+import QtQuick.Layouts 1.3
+
 import "../Components"
 
 
@@ -47,15 +49,36 @@ Rectangle
         anchors.leftMargin: styles.sizes.std_margin* 2;
         anchors.rightMargin: styles.sizes.std_margin* 2;
 
-        Button
+        RowLayout
         {
-            id: btn1;
+            spacing: 6;
 
             anchors.top: parent.top;
             anchors.left: parent.left;
 
-        anchors.topMargin: styles.sizes.std_margin * 2;
-        anchors.leftMargin: styles.sizes.std_margin* 2;
+            anchors.topMargin: styles.sizes.std_margin * 2;
+            anchors.leftMargin: styles.sizes.std_margin* 2;
+
+            Button
+            {
+                    id: btn1;
+
+            }
+            Button
+            {
+                    id: btn2;
+
+            }
+            Button
+            {
+                    id: btn3;
+
+            }
+            Button
+            {
+                    id: btn4;
+
+            }
         }
     }
 }
