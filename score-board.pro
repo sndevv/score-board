@@ -87,13 +87,13 @@ qtcAddDeployment()
 DISTFILES += \
     qml/Runtime/Runtime.qml \
     qml/Screens/StandbyScreen.qml \
+    qml/Screens/GameScreen.qml \
     qml/Styles/Styles.qml \
     qml/Styles/Colors.qml \
     qml/Styles/Sizes.qml \
     qml/Styles/Fonts.qml \
     qml/Components/RegionBlock.qml \
     qml/Components/Button.qml \
-    qml/Components/XRect.qml \
-    qml/Screens/GameScreen.qml
+    qml/Components/XRect.qml
 
 

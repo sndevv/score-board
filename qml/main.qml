@@ -49,7 +49,7 @@ Rectangle
 
 
 
-    state: "";
+    state: "GAME";
 
     Loader
     {
@@ -105,7 +105,7 @@ Rectangle
             PropertyChanges
             {
                 target: main_screen_loader;
-                source: "MainScreen.qml";
+                source: "Screens/MainScreen.qml";
             }
 
             StateChangeScript
@@ -121,7 +121,7 @@ Rectangle
             PropertyChanges
             {
                 target: main_screen_loader;
-                source: "GameScreen.qml";
+                source: "Screens/GameScreen.qml";
             }
 
             StateChangeScript
