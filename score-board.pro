@@ -86,6 +86,7 @@ qtcAddDeployment()
 
 DISTFILES += \
     qml/Runtime/Runtime.qml \
+    qml/Runtime/GameConfig.qml \
     qml/Screens/StandbyScreen.qml \
     qml/Screens/GameScreen.qml \
     qml/Styles/Styles.qml \
@@ -95,6 +96,6 @@ DISTFILES += \
     qml/Components/RegionBlock.qml \
     qml/Components/Button.qml \
     qml/Components/XRect.qml \
-    qml/Types/RCSettings.qml
+    qml/Types/RCSettings.qml 
 
 
