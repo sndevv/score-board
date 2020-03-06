@@ -14,8 +14,6 @@ XRect
 
     color: styles.colors.button_background;
 
-    radius: 4;
-
     Text
     {
         id: label

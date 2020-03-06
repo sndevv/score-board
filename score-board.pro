@@ -94,6 +94,7 @@ DISTFILES += \
     qml/Styles/Fonts.qml \
     qml/Components/RegionBlock.qml \
     qml/Components/Button.qml \
-    qml/Components/XRect.qml
+    qml/Components/XRect.qml \
+    qml/Types/RCSettings.qml
 
 

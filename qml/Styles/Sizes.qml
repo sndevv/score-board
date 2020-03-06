@@ -4,7 +4,7 @@ Item
 {
     id: sizes;
 
-    readonly property int std_radius: 4;
+    readonly property int std_radius: 8;
     readonly property int std_margin: 8;
 
     readonly property int std_hdr_size: 64;
