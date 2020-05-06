@@ -61,23 +61,28 @@ Rectangle
 
             Button
             {
-                    id: btn1;
+                id: btn1;
+
+                label: "Button 0";
+            }
+            Button
+            {
+                id: btn2;
+
+                label: "Button 1";
+            }
+            Button
+            {
+                id: btn3;
+
+                label: "Button 2";
 
             }
             Button
             {
-                    id: btn2;
+                id: btn4;
 
-            }
-            Button
-            {
-                    id: btn3;
-
-            }
-            Button
-            {
-                    id: btn4;
-
+                label: "Button 3";
             }
         }
     }

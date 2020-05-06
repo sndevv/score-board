@@ -49,7 +49,7 @@ Rectangle
 
 
 
-    state: "GAME";
+    state: "";
 
     Loader
     {

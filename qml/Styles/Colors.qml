@@ -7,7 +7,7 @@ Item
     readonly property color main_background: Qt.rgba(0x021/255, 0x021/255, 0x021/255, 1);
 
     readonly property color block_background : Qt.rgba(50/255, 50/255, 50/255, 1);
-    readonly property color border_color 	 : Qt.rgba(50/255, 50/255, 50/255, 1);
+    readonly property color border_color 	 : Qt.rgba (41/255.0, 97/255.0, 166/255.0, 1)
 
     readonly property color button_background: Qt.rgba(0x04d / 255, 0x04d / 255, 0x04d / 255, 1);
 
