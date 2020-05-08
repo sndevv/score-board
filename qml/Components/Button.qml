@@ -9,12 +9,16 @@ XRect
 
     property alias label: label.text;
 
+    // The signal is sent, when the button has been mouse clicked, or enter/return has been pressed
+    // on a focused button.
+    signal confirm();
+
     width: styles.sizes.std_btn_width;
     height: styles.sizes.std_btn_height;
 
     color: styles.colors.button_background;
 
-    show_border: focus == true ? true : false;
+    show_border: activeFocus == true ? true : false;
 
     Text
     {
@@ -32,6 +36,15 @@ XRect
         font.pixelSize: styles.sizes.std_btn_font_size;
     }
 
+    Keys.onPressed:
+    {
+        if (event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
+        {
+            root.confirm();
+            event.accepted = true;
+        }
+    }
+
     MouseArea
     {
         id: ma;
@@ -43,17 +56,11 @@ XRect
         onPressed:
         {
             root.forceActiveFocus()
-            console.log("The button '" + label.text + "' has been pressed");
-        }
-
-        onReleased:
-        {
-            console.log("The button '" + label.text + "' has been released");
         }
 
         onClicked:
         {
-            console.log("The button '" + label.text + "' has been clicked");
+            root.confirm();
         }
     }
 }

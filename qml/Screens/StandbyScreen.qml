@@ -7,6 +7,8 @@ import "../Components"
 
 Rectangle
 {
+    id: root;
+
     color: styles.colors.main_background;
 
 
@@ -49,8 +51,10 @@ Rectangle
         anchors.leftMargin: styles.sizes.std_margin* 2;
         anchors.rightMargin: styles.sizes.std_margin* 2;
 
-        RowLayout
+        ColumnLayout
         {
+            id: rl;
+
             spacing: 6;
 
             anchors.top: parent.top;
@@ -59,31 +63,35 @@ Rectangle
             anchors.topMargin: styles.sizes.std_margin * 2;
             anchors.leftMargin: styles.sizes.std_margin* 2;
 
-            Button
+            Repeater
             {
-                id: btn1;
+                id: repeater_id;
+                model: 4;
+                Button
+                {
+                    id: btn1;
 
-                label: "Button 0";
-            }
-            Button
-            {
-                id: btn2;
+                    label: "Button " + index;
 
-                label: "Button 1";
-            }
-            Button
-            {
-                id: btn3;
+                    focus: true
 
-                label: "Button 2";
+                    onConfirm:
+                    {
+                        console.log("Selected button '" + label + "' has been confirmed");
+                    }
 
-            }
-            Button
-            {
-                id: btn4;
-
-                label: "Button 3";
+                    KeyNavigation.up: index > 0 ? repeater_id.itemAt(index - 1) : null;
+                }
             }
         }
+    }
+
+    Component.onCompleted:
+    {
+        console.log("Standby screen completed");
+    }
+
+    Keys.onPressed:
+    {
     }
 }

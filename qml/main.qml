@@ -58,7 +58,7 @@ Rectangle
         anchors.fill: parent;
         objectName: "main_screen_loader";
 
-        focus: false;
+        focus: true;
 
         source: "Screens/StandbyScreen.qml";
 
